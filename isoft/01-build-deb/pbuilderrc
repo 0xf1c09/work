@@ -1,0 +1,11 @@
+#MIRRORSITE=http://10.15.0.115:8085/uos_pool/arm64_desktop/
+MIRRORSITE=http://mirrors.tuna.tsinghua.edu.cn/debian/
+#MIRRORSITE=http://10.15.0.115:8085/kylin_pool/kylin-V10Desktop-pool/KYLIN-ALL/
+#MIRRORSITE=http://archive.kylinos.cn/kylin/KYLIN-ALL/
+MIRRORSITE=http://10.15.0.115:8085/kylin_pool/kylin_V10_sw/sw_64_pool/sw_64-desktop/aptsource0310/mirror/archive.launchpad.dev/MERGE/KYLIN-ALL.signed/
+USENETWORK=yes
+DISTRIBUTION=10.1-sw64
+ALLOWUNTRUCTED=yes
+DEBOOTSTRAPOPTS=('--variant=buildd' '--no-check-gpg' '--components=main,multiverse,universe,restricted')
+HOOKDIR="$HOME/.pbuilder/hooks"
+BINDMOUNTS="/var/cache/pbuilder/result"

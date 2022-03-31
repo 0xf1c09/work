@@ -1,0 +1,66 @@
+{
+  "build": [
+    {
+      "address": "http://10.15.0.120:8085/basedeb/",
+      "arch": "arm64",
+      "path": "/home/cetc15/basedeb/repo/basedeb"
+    },
+    {
+      "address": "http://10.15.0.120:8085/mipsrepo/",
+      "arch": "mips64el",
+      "path": "/home/cetc15/basedeb/repo/basedeb"
+    },
+    {
+      "address": "http://10.15.0.120:8085/sw64repo/",
+      "arch": "sw_64",
+      "path": "/home/cetc15/basedeb/repo/basedeb"
+    }
+  ],
+  "repository": [
+    {
+      "supplier": "kylin",
+      "address": "http://10.15.0.115:8085/kylin_pool/kylin-V10Desktop-pool/KYLIN-ALL/",
+      "arch": "arm64 mips64el",
+      "code name": "10.1",
+      "components": "main universe multiverse restricted",
+      "path": "/data/kylin_pool/kylin-V10Desktop-pool/KYLIN-ALL",
+      "source.lists": "deb [trusted=yes] http://10.15.0.115:8085/kylin_pool/kylin-V10Desktop-pool/KYLIN-ALL/ 10.1 main universe multiverse restricted"
+    },
+    {
+      "supplier": "kylin",
+      "address": "http://10.15.0.115:8085/kylin_pool/kylin_V10_sw/sw_64_pool/sw_64-desktop/aptsource0310/mirror/archive.launchpad.dev/MERGE/KYLIN-ALL.signed/",
+      "arch": "sw_64",
+      "code name": "10.1-sw64",
+      "components": "main universe multiverse restricted",
+      "path": "/data/kylin_pool/kylin_V10_sw/sw_64_pool/sw_64-desktop/aptsource0310/mirror/archive.launchpad.dev/MERGE/KYLIN-ALL.signed",
+      "source.lists": "deb [trusted=yes] http://10.15.0.115:8085/kylin_pool/kylin_V10_sw/sw_64_pool/sw_64-desktop/aptsource0310/mirror/archive.launchpad.dev/MERGE/KYLIN-ALL.signed/ 10.1-sw64 main multiverse universe restricted"
+    },
+    {
+      "supplier": "uos",
+      "address": "http://10.15.0.115:8085/uos_pool/arm64_desktop/",
+      "arch": "arm64",
+      "code name": "shangyu",
+      "components": "main non-free",
+      "path": "/data/uos_pool/arm64_desktop",
+      "source.lists": "deb [trusted=yes] http://10.15.0.115:8085/uos_pool/arm64_desktop/ shangyu main non-free"
+    },
+    {
+      "supplier": "uos",
+      "address": "http://10.15.0.115:8085/uos_pool/mips64el_desktop/",
+      "arch": "mips64el",
+      "code name": "shangyu",
+      "components": "main non-free",
+      "path": "/data/uos_pool/mips64el_desktop",
+      "source.lists": "deb [trusted=yes] http://10.15.0.115:8085/uos_pool/mips64el_desktop/ shangyu main non-free"
+    },
+    {
+      "supplier": "uos",
+      "address": "http://10.15.0.115:8085/uos_pool/sw_desktop/",
+      "arch": "sw_64",
+      "code name": "shangyu",
+      "components": "main non-free",
+      "path": "/data/uos_pool/sw_desktop",
+      "source.lists": "deb [trusted=yes] http://10.15.0.115:8085/uos_pool/sw_desktop/ shangyu main non-free"
+    }
+  ]
+}
