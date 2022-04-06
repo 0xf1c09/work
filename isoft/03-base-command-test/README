@@ -1,0 +1,15 @@
+# 目录结构
+.
+├── base_test
+│   ├── baseTest.sh
+│   └── commands.txt
+└── README
+
+# base_test
+基础命令测试脚本，验证基础库在镜像内的安装情况
+
+## baseTest.sh
+测试脚本
+
+## commands.txt
+测试的命令
