@@ -1,19 +1,22 @@
 # 目录结构
+```shell
 .
 ├── hooks
-│   ├── A01export
-│   ├── C10shell
-│   ├── D05repo
-│   ├── F01login
-│   └── I01shell
+│   ├── A01export
+│   ├── C10shell
+│   ├── D05repo
+│   ├── F01login
+│   └── I01shell
 ├── pbuilderrc
 ├── pools.json
+├── README
 └── sw
     ├── usr-lib-pbuilder
-    │   ├── pbuilder-checkparams
-    │   └── pbuilder-createbuildenv
+    │   ├── pbuilder-checkparams
+    │   └── pbuilder-createbuildenv
     └── usr-share-debootstrap-scripts
         └── eagle
+```
 
 # hooks
 pbuilder hooks, man 5 pbuilderrc, /usr/share/doc/pbuilder/examples/
