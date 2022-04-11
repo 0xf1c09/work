@@ -1,0 +1,21 @@
+#!/bin/bash
+gdb libcfg/gdb/buggy <<GDB_INPUT
+b main
+run
+s
+s
+s
+s
+s
+s
+p balance
+p rate
+p interest
+s
+s
+p target
+p year
+p balance
+quit
+GDBINPUT
+

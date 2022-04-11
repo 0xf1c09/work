@@ -1,0 +1,8 @@
+#!/bin/bash
+javac -g Hello.java
+jdb Hello <<JDB_INPUT
+stop at Hello:5
+run
+step
+JDB_INPUT
+

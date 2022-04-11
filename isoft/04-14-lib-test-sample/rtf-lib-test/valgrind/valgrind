@@ -1,0 +1,6 @@
+valgrind ./valgrind_test_01_base_test
+valgrind ./valgrind_test_02_uninit-mem
+valgrind ./valgrind_test_03_out_of_range
+valgrind ./valgrind_test_04_mem_cover
+valgrind ./valgrind_test_05_dynamic_mem_error
+valgrind ./valgrind_test_06_mem_leak
