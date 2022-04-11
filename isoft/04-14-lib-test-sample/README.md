@@ -1,4 +1,5 @@
 # 目录结构
+```shell
 .
 ├── qtc_rtf_lib_test
 └── rtf-lib-test
@@ -17,6 +18,7 @@
     ├── libxml2
     ├── pcre
     └── valgrind
+```
 
 # rtf_lib_test
 14类库测试程序样例
