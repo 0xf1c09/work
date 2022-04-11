@@ -1,4 +1,5 @@
 # 目录结构
+```shell
 .
 ├── pbuilder相关文件
 │   ├── hooks
@@ -20,7 +21,7 @@
 ├── pools.json
 ├── README
 └── 基于源码构建deb包说明文档.pdf
-
+```
 
 # 基于源码构建deb包说明文档.pdf
 编译deb包的基础说明
