@@ -1,0 +1,66 @@
+# 目录结构
+.
+├── base_rtf
+│   ├── base_rtf.sh
+│   ├── base_test
+│   │   ├── baseTest.sh
+│   │   └── commands.txt
+│   ├── slimify-excludes
+│   ├── slimify-includes
+│   └── tar-exclude
+├── qtc_rtf
+│   ├── qtc4_rtf.sh
+│   ├── qtc5_rtf.sh
+│   ├── rt_lib
+│   │   ├── deal_libconfig.sh
+│   │   └── install_lib.config
+│   ├── slimify-excludes
+│   ├── slimify-includes
+│   └── tar-exclude
+├── qt_rtf
+│   ├── qt4.sh
+│   ├── qt5.sh
+│   ├── rt_lib
+│   │   ├── deal_libconfig.sh
+│   │   └── install_lib.config
+│   ├── slimify-excludes
+│   ├── slimify-includes
+│   └── tar-exclude
+├── wgj
+│   ├── base_test
+│   │   ├── baseTest.sh
+│   │   └── commands.txt
+│   ├── mini.sh
+│   ├── mini-x86.sh
+│   ├── qt4_11.sh
+│   ├── qt4.sh
+│   ├── qt5.sh
+│   ├── qtcreator_qt4.sh
+│   ├── qtcreator_qt5.sh
+│   ├── rt_lib
+│   │   ├── deal_libconfig.sh
+│   │   └── install_lib.config
+│   ├── slimify-excludes
+│   ├── slimify-includes
+│   └── tar-exclude
+├── README
+└── 沙箱镜像生成与运行.pdf
+
+# 沙箱镜像生成与运行.pdf
+构建镜像说明
+
+# base_rtf
+基础镜像生成脚本
+
+## base_test
+基础镜像命令验证脚本，用于验证基础镜像内软件包是否安装完整
+
+# qtc_rtf
+qtcreator镜像生成脚本
+
+## rt_lib
+14类库安装脚本
+
+# qt_rtf
+qt镜像生成脚本
+

@@ -1,0 +1,13 @@
+./var/cache/apt/**
+./var/lib/apt/lists/**
+./var/state/apt/lists/**
+./var/cache/apt/*.bin
+./var/cache/apt/archives/*.deb
+./var/cache/apt/archives/lock
+./var/lib/apt/lists/*Packages*
+./var/lib/apt/lists/*Release*
+./var/lib/apt/lists/lock
+./var/state/apt/lists/*Packages*
+./var/state/apt/lists/*Release*
+./var/state/apt/lists/lock
+./var/log/**
