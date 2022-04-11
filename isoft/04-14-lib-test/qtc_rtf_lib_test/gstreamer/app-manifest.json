@@ -1,0 +1,1 @@
+{"app":"gstreamer","appEntry":"/opt/app/runApp","appManifest":[{"from":"/home/user/yuyh/qtc/build-gstreamer-Desktop-Debug/gstreamer","to":"/opt/app/runApp"}],"rtfInfo":"docker.bplatform.demo/qt5_rtf_lx:1.0","version":"1.0"}
