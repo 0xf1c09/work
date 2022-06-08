@@ -1,6 +1,0 @@
-运行 java测试 案例 com.example.demo.FFmpegJNITest
-sbc run -t -v /home/user/JAVA-TEST/java-rtf-test/ffmpeg/files:/tmp@/home/user/JAVA-TEST/java-rtf-test/rmi.sh:/opt/app/lib/logback-classic-1.2.3.jar@/home/user/JAVA-TEST/java-rtf-test/test-classes/com:/opt/app/test-classes/com -p docker.bplatform.demo/java_rtf_sw:2.1 docker.bplatform.demo/java_rtf_test_all:1.0  /opt/app/runTest com.example.demo.FFmpegJNITest encode_video /tmp/02.yuv /tmp/02.flv
-TEST_DIR=/opt/app
-/usr/lib/jvm/java-11-openjdk-sw_64/bin/java -classpath /opt/app/lib/*:/opt/app/classes:/opt/app/test-classes com.example.demo.FFmpegJNITest encode_video /tmp/02.yuv /tmp/02.flv
-视频编码
-Could not open /tmp/02.yuv 
