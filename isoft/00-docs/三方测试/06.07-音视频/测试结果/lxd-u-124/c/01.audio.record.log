@@ -1,0 +1,3 @@
+ALSA lib pcm_dsnoop.c:638:(snd_pcm_dsnoop_open) unable to open slave
+[alsa @ 0x55555b56e6f0] cannot open audio device default (No such file or directory)
+Failed to open audio device, [-5]Input/output error
