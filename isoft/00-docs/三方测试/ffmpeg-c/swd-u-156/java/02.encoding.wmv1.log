@@ -1,0 +1,24 @@
+运行 java测试 案例 com.example.demo.FFmpegJNITest
+sbc run -t -v /home/user/JAVA-TEST/java-rtf-test/ffmpeg/files:/tmp@/home/user/JAVA-TEST/java-rtf-test/rmi.sh:/opt/app/lib/logback-classic-1.2.3.jar@/home/user/JAVA-TEST/java-rtf-test/test-classes/com:/opt/app/test-classes/com -p docker.bplatform.demo/java_rtf_sw:2.1 docker.bplatform.demo/java_rtf_test_all:1.0  /opt/app/runTest com.example.demo.FFmpegJNITest encode_audio /tmp/02.pcm /tmp/02.wmv1
+TEST_DIR=/opt/app
+/usr/lib/jvm/java-11-openjdk-sw_64/bin/java -classpath /opt/app/lib/*:/opt/app/classes:/opt/app/test-classes com.example.demo.FFmpegJNITest encode_audio /tmp/02.pcm /tmp/02.wmv1
+音频编码
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (os_linux_zero.cpp:267), pid=11878, tid=11880
+#  fatal error: caught unhandled signal 11
+#
+# JRE version: OpenJDK Runtime Environment (11.0.7) (build 11.0.7-internal+0-adhoc.zhj.swjdk11u)
+# Java VM: OpenJDK 64-Bit Zero VM (11.0.7-internal+0-adhoc.zhj.swjdk11u, interpreted mode, serial gc, linux-sw64)
+# No core dump will be written. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# An error report file with more information is saved as:
+# /tmp/hs_err_pid11878.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+Aborted

@@ -1,0 +1,723 @@
+运行 java测试 案例 com.example.demo.FFmpegJNITest
+sbc run -t -v /home/user/JAVA-TEST/java-rtf-test/ffmpeg/files:/tmp@/home/user/JAVA-TEST/java-rtf-test/rmi.sh:/opt/app/lib/logback-classic-1.2.3.jar@/home/user/JAVA-TEST/java-rtf-test/test-classes/com:/opt/app/test-classes/com -p docker.bplatform.demo/java_rtf_lx:2.1 docker.bplatform.demo/java_rtf_test_all:1.0  /opt/app/runTest com.example.demo.FFmpegJNITest encode_video /tmp/02.yuv /tmp/02.mpg
+TEST_DIR=/opt/app
+/usr/lib/jvm/java-11-openjdk-mips64el/bin/java -classpath /opt/app/lib/*:/opt/app/classes:/opt/app/test-classes com.example.demo.FFmpegJNITest encode_video /tmp/02.yuv /tmp/02.mpg
+OpenJDK 64-Bit Zero VM warning: You have loaded library /usr/lib/libffmpeg-jni.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+视频编码
+Output #0, mpeg, to '/tmp/02.mpg':
+    Stream #0:0: Video: mpeg1video, yuv420p, 640x480, q=2-31, 400 kb/s, 25 tbn
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;226mVBV buffer size not set, using default size of 230KB
+If you want the mpeg file to be compliant to some specification
+Like DVD, VCD or others, make sure you set the correct buffer size
+[0mpts:0 pts_time:0 dts:-3600 dts_time:-0.04 duration:0 duration_time:0 stream_index:0
+pts:3600 pts_time:0.04 dts:0 dts_time:0 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=10406 size=25719
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=12447 size=25719
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=14488 size=25719
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=16529 size=25719
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=18570 size=25719
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=20611 size=25719
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=22652 size=25719
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=24693 size=25719
+[0mpts:7200 pts_time:0.08 dts:3600 dts_time:0.04 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1006 size=9511
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3047 size=9511
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=5088 size=9511
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=7129 size=9511
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=9170 size=9511
+[0mpts:10800 pts_time:0.12 dts:7200 dts_time:0.08 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1691 size=33119
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3732 size=33119
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=5773 size=33119
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=7814 size=33119
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=9855 size=33119
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=11896 size=33119
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=13937 size=33119
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=15978 size=33119
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=18019 size=33119
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=20060 size=33119
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=22101 size=33119
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=24142 size=33119
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=26183 size=33119
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=28224 size=33119
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=30265 size=33119
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=32306 size=33119
+[0mpts:14400 pts_time:0.16 dts:10800 dts_time:0.12 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1219 size=3467
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3260 size=3467
+[0mpts:18000 pts_time:0.2 dts:14400 dts_time:0.16 duration:0 duration_time:0 stream_index:0
+pts:21600 pts_time:0.24 dts:18000 dts_time:0.2 duration:0 duration_time:0 stream_index:0
+pts:25200 pts_time:0.28 dts:21600 dts_time:0.24 duration:0 duration_time:0 stream_index:0
+pts:28800 pts_time:0.32 dts:25200 dts_time:0.28 duration:0 duration_time:0 stream_index:0
+pts:32400 pts_time:0.36 dts:28800 dts_time:0.32 duration:0 duration_time:0 stream_index:0
+pts:36000 pts_time:0.4 dts:32400 dts_time:0.36 duration:0 duration_time:0 stream_index:0
+pts:39600 pts_time:0.44 dts:36000 dts_time:0.4 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=19 size=180
+[0mpts:43200 pts_time:0.48 dts:39600 dts_time:0.44 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1871 size=20598
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3912 size=20598
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=5953 size=20598
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=7994 size=20598
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=10035 size=20598
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=12076 size=20598
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=14105 size=20598
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=16146 size=20598
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=18187 size=20598
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=20228 size=20598
+[0mpts:46800 pts_time:0.52 dts:43200 dts_time:0.48 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1662 size=15728
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3703 size=15728
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=5744 size=15728
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=7785 size=15728
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=9826 size=15728
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=11867 size=15728
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=13908 size=15728
+[0mpts:50400 pts_time:0.56 dts:46800 dts_time:0.52 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=212 size=1285
+[0mpts:54000 pts_time:0.6 dts:50400 dts_time:0.56 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=959 size=28572
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3000 size=28572
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=5041 size=28572
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=7082 size=28572
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=9123 size=28572
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=11164 size=28572
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=13205 size=28572
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=15246 size=28572
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=17287 size=28572
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=19328 size=28572
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=21369 size=28572
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=23410 size=28572
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=25451 size=28572
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=27492 size=28572
+[0mpts:57600 pts_time:0.64 dts:54000 dts_time:0.6 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=952 size=1063
+[0mpts:61200 pts_time:0.68 dts:57600 dts_time:0.64 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1921 size=7592
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3962 size=7592
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=6003 size=7592
+[0mpts:64800 pts_time:0.72 dts:61200 dts_time:0.68 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=443 size=717
+[0mpts:68400 pts_time:0.76 dts:64800 dts_time:0.72 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1758 size=7789
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3799 size=7789
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=5840 size=7789
+[0mpts:72000 pts_time:0.8 dts:68400 dts_time:0.76 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=83 size=1309
+[0mpts:75600 pts_time:0.84 dts:72000 dts_time:0.8 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=806 size=5737
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2847 size=5737
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=4888 size=5737
+[0mpts:79200 pts_time:0.88 dts:75600 dts_time:0.84 duration:0 duration_time:0 stream_index:0
+pts:82800 pts_time:0.92 dts:79200 dts_time:0.88 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=575 size=8771
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2616 size=8771
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=4657 size=8771
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=6698 size=8771
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=8739 size=8771
+[0mpts:86400 pts_time:0.96 dts:82800 dts_time:0.92 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2000 size=8295
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=4041 size=8295
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=6082 size=8295
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=8123 size=8295
+[0mpts:90000 pts_time:1 dts:86400 dts_time:0.96 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1860 size=2845
+[0mpts:93600 pts_time:1.04 dts:90000 dts_time:1 duration:0 duration_time:0 stream_index:0
+pts:97200 pts_time:1.08 dts:93600 dts_time:1.04 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=620 size=17675
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2661 size=17675
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=4702 size=17675
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=6743 size=17675
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=8772 size=17675
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=10813 size=17675
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=12854 size=17675
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=14895 size=17675
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=16936 size=17675
+[0mpts:100800 pts_time:1.12 dts:97200 dts_time:1.08 duration:0 duration_time:0 stream_index:0
+pts:104400 pts_time:1.16 dts:100800 dts_time:1.12 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=829 size=2529
+[0mpts:108000 pts_time:1.2 dts:104400 dts_time:1.16 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=332 size=452
+[0mpts:111600 pts_time:1.24 dts:108000 dts_time:1.2 duration:0 duration_time:0 stream_index:0
+pts:115200 pts_time:1.28 dts:111600 dts_time:1.24 duration:0 duration_time:0 stream_index:0
+pts:118800 pts_time:1.32 dts:115200 dts_time:1.28 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=284 size=7149
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2325 size=7149
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=4366 size=7149
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=6407 size=7149
+[0mpts:122400 pts_time:1.36 dts:118800 dts_time:1.32 duration:0 duration_time:0 stream_index:0
+pts:126000 pts_time:1.4 dts:122400 dts_time:1.36 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=698 size=863
+[0mpts:129600 pts_time:1.44 dts:126000 dts_time:1.4 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1867 size=9453
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3908 size=9453
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=5949 size=9453
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=7990 size=9453
+[0mpts:133200 pts_time:1.48 dts:129600 dts_time:1.44 duration:0 duration_time:0 stream_index:0
+pts:136800 pts_time:1.52 dts:133200 dts_time:1.48 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=239 size=281
+[0mpts:140400 pts_time:1.56 dts:136800 dts_time:1.52 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1990 size=16393
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=4031 size=16393
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=6072 size=16393
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=8113 size=16393
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=10154 size=16393
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=12195 size=16393
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=14236 size=16393
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=16277 size=16393
+[0mpts:144000 pts_time:1.6 dts:140400 dts_time:1.56 duration:0 duration_time:0 stream_index:0
+pts:147600 pts_time:1.64 dts:144000 dts_time:1.6 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1547 size=2817
+[0mpts:151200 pts_time:1.68 dts:147600 dts_time:1.64 duration:0 duration_time:0 stream_index:0
+pts:154800 pts_time:1.72 dts:151200 dts_time:1.68 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=77 size=265
+[0mpts:158400 pts_time:1.76 dts:154800 dts_time:1.72 duration:0 duration_time:0 stream_index:0
+pts:162000 pts_time:1.8 dts:158400 dts_time:1.76 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=846 size=1462
+[0mpts:165600 pts_time:1.84 dts:162000 dts_time:1.8 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1416 size=1441
+[0mpts:169200 pts_time:1.88 dts:165600 dts_time:1.84 duration:0 duration_time:0 stream_index:0
+pts:172800 pts_time:1.92 dts:169200 dts_time:1.88 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1346 size=11850
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3387 size=11850
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=5428 size=11850
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=7469 size=11850
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=9510 size=11850
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=11551 size=11850
+[0mpts:176400 pts_time:1.96 dts:172800 dts_time:1.92 duration:0 duration_time:0 stream_index:0
+pts:180000 pts_time:2 dts:176400 dts_time:1.96 duration:0 duration_time:0 stream_index:0
+pts:183600 pts_time:2.04 dts:180000 dts_time:2 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1096 size=20543
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3137 size=20543
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=5178 size=20543
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=7219 size=20543
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=9260 size=20543
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=11301 size=20543
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=13342 size=20543
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=15383 size=20543
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=17424 size=20543
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=19465 size=20543
+[0mpts:187200 pts_time:2.08 dts:183600 dts_time:2.04 duration:0 duration_time:0 stream_index:0
+pts:190800 pts_time:2.12 dts:187200 dts_time:2.08 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=19 size=920
+[0mpts:194400 pts_time:2.16 dts:190800 dts_time:2.12 duration:0 duration_time:0 stream_index:0
+pts:198000 pts_time:2.2 dts:194400 dts_time:2.16 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=393 size=651
+[0mpts:201600 pts_time:2.24 dts:198000 dts_time:2.2 duration:0 duration_time:0 stream_index:0
+pts:205200 pts_time:2.28 dts:201600 dts_time:2.24 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=94 size=586
+[0mpts:208800 pts_time:2.32 dts:205200 dts_time:2.28 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1540 size=2618
+[0mpts:212400 pts_time:2.36 dts:208800 dts_time:2.32 duration:0 duration_time:0 stream_index:0
+pts:216000 pts_time:2.4 dts:212400 dts_time:2.36 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=716 size=10171
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2757 size=10171
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=4798 size=10171
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=6827 size=10171
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=8868 size=10171
+[0mpts:219600 pts_time:2.44 dts:216000 dts_time:2.4 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=729 size=3974
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2770 size=3974
+[0mpts:223200 pts_time:2.48 dts:219600 dts_time:2.44 duration:0 duration_time:0 stream_index:0
+pts:226800 pts_time:2.52 dts:223200 dts_time:2.48 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=406 size=17865
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2447 size=17865
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=4488 size=17865
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=6529 size=17865
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=8570 size=17865
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=10611 size=17865
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=12652 size=17865
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=14693 size=17865
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=16734 size=17865
+[0mpts:230400 pts_time:2.56 dts:226800 dts_time:2.52 duration:0 duration_time:0 stream_index:0
+pts:234000 pts_time:2.6 dts:230400 dts_time:2.56 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=513 size=1081
+[0mpts:237600 pts_time:2.64 dts:234000 dts_time:2.6 duration:0 duration_time:0 stream_index:0
+pts:241200 pts_time:2.68 dts:237600 dts_time:2.64 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1221 size=2228
+[0mpts:244800 pts_time:2.72 dts:241200 dts_time:2.68 duration:0 duration_time:0 stream_index:0
+pts:248400 pts_time:2.76 dts:244800 dts_time:2.72 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=785 size=861
+[0mpts:252000 pts_time:2.8 dts:248400 dts_time:2.76 duration:0 duration_time:0 stream_index:0
+pts:255600 pts_time:2.84 dts:252000 dts_time:2.8 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=291 size=1950
+[0mpts:259200 pts_time:2.88 dts:255600 dts_time:2.84 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=373 size=9536
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2414 size=9536
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=4455 size=9536
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=6496 size=9536
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=8537 size=9536
+[0mpts:262800 pts_time:2.92 dts:259200 dts_time:2.88 duration:0 duration_time:0 stream_index:0
+pts:266400 pts_time:2.96 dts:262800 dts_time:2.92 duration:0 duration_time:0 stream_index:0
+pts:270000 pts_time:3 dts:266400 dts_time:2.96 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=717 size=22789
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2758 size=22789
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=4799 size=22789
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=6840 size=22789
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=8881 size=22789
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=10922 size=22789
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=12963 size=22789
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=15004 size=22789
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=17045 size=22789
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=19086 size=22789
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=21127 size=22789
+[0mpts:273600 pts_time:3.04 dts:270000 dts_time:3 duration:0 duration_time:0 stream_index:0
+pts:277200 pts_time:3.08 dts:273600 dts_time:3.04 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=131 size=1539
+[0mpts:280800 pts_time:3.12 dts:277200 dts_time:3.08 duration:0 duration_time:0 stream_index:0
+pts:284400 pts_time:3.16 dts:280800 dts_time:3.12 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=352 size=380
+[0mpts:288000 pts_time:3.2 dts:284400 dts_time:3.16 duration:0 duration_time:0 stream_index:0
+pts:291600 pts_time:3.24 dts:288000 dts_time:3.2 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=157 size=351
+[0mpts:295200 pts_time:3.28 dts:291600 dts_time:3.24 duration:0 duration_time:0 stream_index:0
+pts:298800 pts_time:3.32 dts:295200 dts_time:3.28 duration:0 duration_time:0 stream_index:0
+pts:302400 pts_time:3.36 dts:298800 dts_time:3.32 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1055 size=12612
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3096 size=12612
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=5137 size=12612
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=7178 size=12612
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=9219 size=12612
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=11260 size=12612
+[0mpts:306000 pts_time:3.4 dts:302400 dts_time:3.36 duration:0 duration_time:0 stream_index:0
+pts:309600 pts_time:3.44 dts:306000 dts_time:3.4 duration:0 duration_time:0 stream_index:0
+pts:313200 pts_time:3.48 dts:309600 dts_time:3.44 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=348 size=26564
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2389 size=26564
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=4430 size=26564
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=6471 size=26564
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=8512 size=26564
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=10553 size=26564
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=12594 size=26564
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=14635 size=26564
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=16676 size=26564
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=18717 size=26564
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=20746 size=26564
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=22787 size=26564
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=24828 size=26564
+[0mpts:316800 pts_time:3.52 dts:313200 dts_time:3.48 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=296 size=361
+[0mpts:320400 pts_time:3.56 dts:316800 dts_time:3.52 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1967 size=5484
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=4008 size=5484
+[0mpts:324000 pts_time:3.6 dts:320400 dts_time:3.56 duration:0 duration_time:0 stream_index:0
+pts:327600 pts_time:3.64 dts:324000 dts_time:3.6 duration:0 duration_time:0 stream_index:0
+pts:331200 pts_time:3.68 dts:327600 dts_time:3.64 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=92 size=325
+[0mpts:334800 pts_time:3.72 dts:331200 dts_time:3.68 duration:0 duration_time:0 stream_index:0
+pts:338400 pts_time:3.76 dts:334800 dts_time:3.72 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=42 size=181
+[0mpts:342000 pts_time:3.8 dts:338400 dts_time:3.76 duration:0 duration_time:0 stream_index:0
+pts:345600 pts_time:3.84 dts:342000 dts_time:3.8 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1693 size=7139
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3734 size=7139
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=5775 size=7139
+[0mpts:349200 pts_time:3.88 dts:345600 dts_time:3.84 duration:0 duration_time:0 stream_index:0
+pts:352800 pts_time:3.92 dts:349200 dts_time:3.88 duration:0 duration_time:0 stream_index:0
+pts:356400 pts_time:3.96 dts:352800 dts_time:3.92 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=462 size=23789
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2503 size=23789
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=4544 size=23789
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=6585 size=23789
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=8626 size=23789
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=10667 size=23789
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=12708 size=23789
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=14749 size=23789
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=16790 size=23789
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=18831 size=23789
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=20872 size=23789
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=22913 size=23789
+[0mpts:360000 pts_time:4 dts:356400 dts_time:3.96 duration:0 duration_time:0 stream_index:0
+pts:363600 pts_time:4.04 dts:360000 dts_time:4 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1056 size=22019
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3097 size=22019
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=5138 size=22019
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=7179 size=22019
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=9220 size=22019
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=11261 size=22019
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=13302 size=22019
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=15343 size=22019
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=17384 size=22019
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=19425 size=22019
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=21466 size=22019
+[0mpts:367200 pts_time:4.08 dts:363600 dts_time:4.04 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1479 size=3726
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3520 size=3726
+[0mpts:370800 pts_time:4.12 dts:367200 dts_time:4.08 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1826 size=4325
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3867 size=4325
+[0mpts:374400 pts_time:4.16 dts:370800 dts_time:4.12 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1574 size=2029
+[0mpts:378000 pts_time:4.2 dts:374400 dts_time:4.16 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1577 size=3241
+[0mpts:381600 pts_time:4.24 dts:378000 dts_time:4.2 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=368 size=3189
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2409 size=3189
+[0mpts:385200 pts_time:4.28 dts:381600 dts_time:4.24 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1252 size=2002
+[0mpts:388800 pts_time:4.32 dts:385200 dts_time:4.28 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1282 size=3729
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3323 size=3729
+[0mpts:392400 pts_time:4.36 dts:388800 dts_time:4.32 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1626 size=2208
+[0mpts:396000 pts_time:4.4 dts:392400 dts_time:4.36 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1450 size=1894
+[0mpts:399600 pts_time:4.44 dts:396000 dts_time:4.4 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1588 size=2953
+[0mpts:403200 pts_time:4.48 dts:399600 dts_time:4.44 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=667 size=1496
+[0mpts:406800 pts_time:4.52 dts:403200 dts_time:4.48 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1203 size=10314
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3244 size=10314
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=5285 size=10314
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=7299 size=10314
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=9340 size=10314
+[0mpts:410400 pts_time:4.56 dts:406800 dts_time:4.52 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1058 size=3618
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3099 size=3618
+[0mpts:414000 pts_time:4.6 dts:410400 dts_time:4.56 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1513 size=1882
+[0mpts:417600 pts_time:4.64 dts:414000 dts_time:4.6 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1663 size=2354
+[0mpts:421200 pts_time:4.68 dts:417600 dts_time:4.64 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1341 size=3156
+[0mpts:424800 pts_time:4.72 dts:421200 dts_time:4.68 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=217 size=1832
+[0mpts:428400 pts_time:4.76 dts:424800 dts_time:4.72 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=417 size=2155
+[0mpts:432000 pts_time:4.8 dts:428400 dts_time:4.76 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=294 size=2914
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2335 size=2914
+[0mpts:435600 pts_time:4.84 dts:432000 dts_time:4.8 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1453 size=1792
+[0mpts:439200 pts_time:4.88 dts:435600 dts_time:4.84 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1693 size=2098
+[0mpts:442800 pts_time:4.92 dts:439200 dts_time:4.88 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1627 size=2883
+[0mpts:446400 pts_time:4.96 dts:442800 dts_time:4.92 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=776 size=1622
+[0mpts:450000 pts_time:5 dts:446400 dts_time:4.96 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1186 size=10137
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3227 size=10137
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=5268 size=10137
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=7309 size=10137
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=9350 size=10137
+[0mpts:453600 pts_time:5.04 dts:450000 dts_time:5 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1245 size=3585
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3286 size=3585
+[0mpts:457200 pts_time:5.08 dts:453600 dts_time:5.04 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1733 size=2822
+[0mpts:460800 pts_time:5.12 dts:457200 dts_time:5.08 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=943 size=1972
+[0mpts:464400 pts_time:5.16 dts:460800 dts_time:5.12 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1003 size=2422
+[0mpts:468000 pts_time:5.2 dts:464400 dts_time:5.16 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=613 size=3233
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2654 size=3233
+[0mpts:471600 pts_time:5.24 dts:468000 dts_time:5.2 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1453 size=2395
+[0mpts:475200 pts_time:5.28 dts:471600 dts_time:5.24 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1090 size=3176
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3131 size=3176
+[0mpts:478800 pts_time:5.32 dts:475200 dts_time:5.28 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1987 size=2894
+[0mpts:482400 pts_time:5.36 dts:478800 dts_time:5.32 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1125 size=2280
+[0mpts:486000 pts_time:5.4 dts:482400 dts_time:5.36 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=877 size=3468
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2918 size=3468
+[0mpts:489600 pts_time:5.44 dts:486000 dts_time:5.4 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1482 size=2047
+[0mpts:493200 pts_time:5.48 dts:489600 dts_time:5.44 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1467 size=10439
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3508 size=10439
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=5549 size=10439
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=7590 size=10439
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=9631 size=10439
+[0mpts:496800 pts_time:5.52 dts:493200 dts_time:5.48 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1224 size=3915
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3265 size=3915
+[0mpts:500400 pts_time:5.56 dts:496800 dts_time:5.52 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1382 size=3049
+[0mpts:504000 pts_time:5.6 dts:500400 dts_time:5.56 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=365 size=2502
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2406 size=2502
+[0mpts:507600 pts_time:5.64 dts:504000 dts_time:5.6 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1936 size=2509
+[0mpts:511200 pts_time:5.68 dts:507600 dts_time:5.64 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1459 size=1872
+[0mpts:514800 pts_time:5.72 dts:511200 dts_time:5.68 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1619 size=2620
+[0mpts:518400 pts_time:5.76 dts:514800 dts_time:5.72 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1031 size=2687
+[0mpts:522000 pts_time:5.8 dts:518400 dts_time:5.76 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=376 size=1755
+[0mpts:525600 pts_time:5.84 dts:522000 dts_time:5.8 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=653 size=2157
+[0mpts:529200 pts_time:5.88 dts:525600 dts_time:5.84 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=528 size=3030
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2557 size=3030
+[0mpts:532800 pts_time:5.92 dts:529200 dts_time:5.88 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1559 size=1616
+[0mpts:536400 pts_time:5.96 dts:532800 dts_time:5.92 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1975 size=10076
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=4016 size=10076
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=6057 size=10076
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=8098 size=10076
+[0mpts:540000 pts_time:6 dts:536400 dts_time:5.96 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=54 size=3563
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2095 size=3563
+[0mpts:543600 pts_time:6.04 dts:540000 dts_time:6 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=564 size=3384
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2605 size=3384
+[0mpts:547200 pts_time:6.08 dts:543600 dts_time:6.04 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1253 size=1997
+[0mpts:550800 pts_time:6.12 dts:547200 dts_time:6.08 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1288 size=1787
+[0mpts:554400 pts_time:6.16 dts:550800 dts_time:6.12 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1533 size=2631
+[0mpts:558000 pts_time:6.2 dts:554400 dts_time:6.16 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=934 size=1855
+[0mpts:561600 pts_time:6.24 dts:558000 dts_time:6.2 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1111 size=2994
+[0mpts:565200 pts_time:6.28 dts:561600 dts_time:6.24 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=149 size=2087
+[0mpts:568800 pts_time:6.32 dts:565200 dts_time:6.28 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=94 size=1848
+[0mpts:572400 pts_time:6.36 dts:568800 dts_time:6.32 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=278 size=3048
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2319 size=3048
+[0mpts:576000 pts_time:6.4 dts:572400 dts_time:6.36 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1303 size=1869
+[0mpts:579600 pts_time:6.44 dts:576000 dts_time:6.4 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1466 size=10129
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3507 size=10129
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=5548 size=10129
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=7589 size=10129
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=9630 size=10129
+[0mpts:583200 pts_time:6.48 dts:579600 dts_time:6.44 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1533 size=3352
+[0mpts:586800 pts_time:6.52 dts:583200 dts_time:6.48 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=213 size=3342
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2254 size=3342
+[0mpts:590400 pts_time:6.56 dts:586800 dts_time:6.52 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=944 size=1577
+[0mpts:594000 pts_time:6.6 dts:590400 dts_time:6.56 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1399 size=1966
+[0mpts:597600 pts_time:6.64 dts:594000 dts_time:6.6 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1465 size=1871
+[0mpts:601200 pts_time:6.68 dts:597600 dts_time:6.64 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1626 size=2628
+[0mpts:604800 pts_time:6.72 dts:601200 dts_time:6.68 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1030 size=3631
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3071 size=3631
+[0mpts:608400 pts_time:6.76 dts:604800 dts_time:6.72 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1472 size=1781
+[0mpts:612000 pts_time:6.8 dts:608400 dts_time:6.76 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1723 size=2070
+[0mpts:615600 pts_time:6.84 dts:612000 dts_time:6.8 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1685 size=3224
+[0mpts:619200 pts_time:6.88 dts:615600 dts_time:6.84 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=493 size=1502
+[0mpts:622800 pts_time:6.92 dts:619200 dts_time:6.88 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1023 size=10083
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3064 size=10083
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=5105 size=10083
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=7146 size=10083
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=9187 size=10083
+[0mpts:626400 pts_time:6.96 dts:622800 dts_time:6.92 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1136 size=3495
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3177 size=3495
+[0mpts:630000 pts_time:7 dts:626400 dts_time:6.96 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1714 size=2825
+[0mpts:633600 pts_time:7.04 dts:630000 dts_time:7 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=921 size=1920
+[0mpts:637200 pts_time:7.08 dts:633600 dts_time:7.04 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1033 size=1903
+[0mpts:640800 pts_time:7.12 dts:637200 dts_time:7.08 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1162 size=2739
+[0mpts:644400 pts_time:7.16 dts:640800 dts_time:7.12 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=455 size=1754
+[0mpts:648000 pts_time:7.2 dts:644400 dts_time:7.16 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=733 size=3276
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2774 size=3276
+[0mpts:651600 pts_time:7.24 dts:648000 dts_time:7.2 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1518 size=2902
+[0mpts:655200 pts_time:7.28 dts:651600 dts_time:7.24 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=648 size=2466
+[0mpts:658800 pts_time:7.32 dts:655200 dts_time:7.28 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=214 size=3592
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2255 size=3592
+[0mpts:662400 pts_time:7.36 dts:658800 dts_time:7.32 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=695 size=1903
+[0mpts:666000 pts_time:7.4 dts:662400 dts_time:7.36 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=824 size=10536
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2865 size=10536
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=4906 size=10536
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=6947 size=10536
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=8988 size=10536
+[0mpts:669600 pts_time:7.44 dts:666000 dts_time:7.4 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=484 size=3945
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2525 size=3945
+[0mpts:673200 pts_time:7.48 dts:669600 dts_time:7.44 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=612 size=3522
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2653 size=3522
+[0mpts:676800 pts_time:7.52 dts:673200 dts_time:7.48 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1163 size=2159
+[0mpts:680400 pts_time:7.56 dts:676800 dts_time:7.52 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1036 size=2686
+[0mpts:684000 pts_time:7.6 dts:680400 dts_time:7.56 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=382 size=2720
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2423 size=2720
+[0mpts:687600 pts_time:7.64 dts:684000 dts_time:7.6 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1735 size=2630
+[0mpts:691200 pts_time:7.68 dts:687600 dts_time:7.64 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1137 size=3333
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3178 size=3333
+[0mpts:694800 pts_time:7.72 dts:691200 dts_time:7.68 duration:0 duration_time:0 stream_index:0
+pts:698400 pts_time:7.76 dts:694800 dts_time:7.72 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=550 size=1647
+[0mpts:702000 pts_time:7.8 dts:698400 dts_time:7.76 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=935 size=2476
+[0mpts:705600 pts_time:7.84 dts:702000 dts_time:7.8 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=491 size=1383
+[0mpts:709200 pts_time:7.88 dts:705600 dts_time:7.84 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1140 size=9806
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3181 size=9806
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=5222 size=9806
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=7263 size=9806
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=9304 size=9806
+[0mpts:712800 pts_time:7.92 dts:709200 dts_time:7.88 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1530 size=3264
+[0mpts:716400 pts_time:7.96 dts:712800 dts_time:7.92 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=298 size=2424
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2339 size=2424
+[0mpts:720000 pts_time:8 dts:716400 dts_time:7.96 duration:0 duration_time:0 stream_index:0
+pts:723600 pts_time:8.04 dts:720000 dts_time:8 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=120 size=2299
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2161 size=2299
+[0mpts:727200 pts_time:8.08 dts:723600 dts_time:8.04 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1894 size=2678
+[0mpts:730800 pts_time:8.12 dts:727200 dts_time:8.08 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1248 size=2137
+[0mpts:734400 pts_time:8.16 dts:730800 dts_time:8.12 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1143 size=2890
+[0mpts:738000 pts_time:8.2 dts:734400 dts_time:8.16 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=285 size=2349
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2326 size=2349
+[0mpts:741600 pts_time:8.24 dts:738000 dts_time:8.2 duration:0 duration_time:0 stream_index:0
+pts:745200 pts_time:8.28 dts:741600 dts_time:8.24 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=165 size=3076
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2206 size=3076
+[0mpts:748800 pts_time:8.32 dts:745200 dts_time:8.28 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1162 size=1487
+[0mpts:752400 pts_time:8.36 dts:748800 dts_time:8.32 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1707 size=10177
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3748 size=10177
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=5789 size=10177
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=7830 size=10177
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=9871 size=10177
+[0mpts:756000 pts_time:8.4 dts:752400 dts_time:8.36 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1726 size=3455
+[0mpts:759600 pts_time:8.44 dts:756000 dts_time:8.4 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=303 size=2601
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2344 size=2601
+[0mpts:763200 pts_time:8.48 dts:759600 dts_time:8.44 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1775 size=2026
+[0mpts:766800 pts_time:8.52 dts:763200 dts_time:8.48 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1781 size=2390
+[0mpts:770400 pts_time:8.56 dts:766800 dts_time:8.52 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1411 size=1828
+[0mpts:774000 pts_time:8.6 dts:770400 dts_time:8.56 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1615 size=2122
+[0mpts:777600 pts_time:8.64 dts:774000 dts_time:8.6 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1525 size=3375
+[0mpts:781200 pts_time:8.68 dts:777600 dts_time:8.64 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=182 size=1854
+[0mpts:784800 pts_time:8.72 dts:781200 dts_time:8.68 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=360 size=2065
+[0mpts:788400 pts_time:8.76 dts:784800 dts_time:8.72 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=327 size=2515
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2368 size=2515
+[0mpts:792000 pts_time:8.8 dts:788400 dts_time:8.76 duration:0 duration_time:0 stream_index:0
+pts:795600 pts_time:8.84 dts:792000 dts_time:8.8 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=304 size=10092
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2345 size=10092
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=4386 size=10092
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=6427 size=10092
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=8468 size=10092
+[0mpts:799200 pts_time:8.88 dts:795600 dts_time:8.84 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=408 size=3589
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2449 size=3589
+[0mpts:802800 pts_time:8.92 dts:799200 dts_time:8.88 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=892 size=2751
+[0mpts:806400 pts_time:8.96 dts:802800 dts_time:8.92 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=173 size=1962
+[0mpts:810000 pts_time:9 dts:806400 dts_time:8.96 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=243 size=2028
+[0mpts:813600 pts_time:9.04 dts:810000 dts_time:9 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=247 size=2704
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2288 size=2704
+[0mpts:817200 pts_time:9.08 dts:813600 dts_time:9.04 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1616 size=1990
+[0mpts:820800 pts_time:9.12 dts:817200 dts_time:9.08 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1658 size=2546
+[0mpts:824400 pts_time:9.16 dts:820800 dts_time:9.12 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1144 size=2399
+[0mpts:828000 pts_time:9.2 dts:824400 dts_time:9.16 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=777 size=2206
+[0mpts:831600 pts_time:9.24 dts:828000 dts_time:9.2 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=603 size=3452
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2644 size=3452
+[0mpts:835200 pts_time:9.28 dts:831600 dts_time:9.24 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1224 size=1859
+[0mpts:838800 pts_time:9.32 dts:835200 dts_time:9.28 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1397 size=10529
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3438 size=10529
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=5479 size=10529
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=7520 size=10529
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=9561 size=10529
+[0mpts:842400 pts_time:9.36 dts:838800 dts_time:9.32 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1064 size=3924
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3105 size=3924
+[0mpts:846000 pts_time:9.4 dts:842400 dts_time:9.36 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1213 size=3559
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=3254 size=3559
+[0mpts:849600 pts_time:9.44 dts:846000 dts_time:9.4 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1727 size=2313
+[0mpts:853200 pts_time:9.48 dts:849600 dts_time:9.44 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1446 size=2743
+[0mpts:856800 pts_time:9.52 dts:853200 dts_time:9.48 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=735 size=2772
+[0mpts:860400 pts_time:9.56 dts:856800 dts_time:9.52 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=4 size=2450
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2045 size=2450
+[0mpts:864000 pts_time:9.6 dts:860400 dts_time:9.56 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1627 size=3030
+[0mpts:867600 pts_time:9.64 dts:864000 dts_time:9.6 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=629 size=2391
+[0mpts:871200 pts_time:9.68 dts:867600 dts_time:9.64 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=270 size=2671
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2311 size=2671
+[0mpts:874800 pts_time:9.72 dts:871200 dts_time:9.68 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1672 size=3264
+[0mpts:878400 pts_time:9.76 dts:874800 dts_time:9.72 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=440 size=1665
+[0mpts:882000 pts_time:9.8 dts:878400 dts_time:9.76 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=807 size=10053
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2848 size=10053
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=4889 size=10053
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=6930 size=10053
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=8971 size=10053
+[0mpts:885600 pts_time:9.84 dts:882000 dts_time:9.8 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=950 size=3643
+[0m[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=2979 size=3643
+[0mpts:889200 pts_time:9.88 dts:885600 dts_time:9.84 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=1368 size=2737
+[0mpts:892800 pts_time:9.92 dts:889200 dts_time:9.88 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=663 size=2126
+[0mpts:896400 pts_time:9.96 dts:892800 dts_time:9.92 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=569 size=1800
+[0mpts:900000 pts_time:10 dts:896400 dts_time:9.96 duration:0 duration_time:0 stream_index:0
+[48;5;0m[38;5;213m[mpeg @ 0x7fffe86d22c0] [0m[48;5;0m[38;5;196mbuffer underflow st=0 bufi=801 size=2124
+[0m

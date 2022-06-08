@@ -1,0 +1,6 @@
+audio_record 音频采集
+video_record 视频采集
+encoding_audio 音频编码，生成一个音频
+encoding_video 视频编码，生成一个视频
+demuxing_decoding 将视频分离为音频和视频
+encoding_muxing 合成带视频和音频的视频

@@ -1,0 +1,19 @@
+运行 java测试 案例 com.example.demo.FFmpegJNITest
+sbc run -t -v /home/user/JAVA-TEST/java-rtf-test/ffmpeg/files:/tmp@/home/user/JAVA-TEST/java-rtf-test/rmi.sh:/opt/app/lib/logback-classic-1.2.3.jar@/home/user/JAVA-TEST/java-rtf-test/test-classes/com:/opt/app/test-classes/com -p docker.bplatform.demo/java_rtf_sw:2.1 docker.bplatform.demo/java_rtf_test_all:1.0  /opt/app/runTest com.example.demo.FFmpegJNITest demuxing_decoding /tmp/01.flv /tmp/02.yuv /tmp/02.pcm
+TEST_DIR=/opt/app
+/usr/lib/jvm/java-11-openjdk-sw_64/bin/java -classpath /opt/app/lib/*:/opt/app/classes:/opt/app/test-classes com.example.demo.FFmpegJNITest demuxing_decoding /tmp/01.flv /tmp/02.yuv /tmp/02.pcm
+音视频分离
+Input #0, flv, from '/tmp/01.flv':
+  Metadata:
+    encoder         : Lavf58.20.100
+  Duration: 00:00:10.03, start: 0.000000, bitrate: 873 kb/s
+    Stream #0:0: Audio: mp3, 44100 Hz, stereo, fltp, 64 kb/s
+    Stream #0:1: Video: flv1, yuv420p, 640x480, 400 kb/s, 25 fps, 25 tbr, 1k tbn
+Demuxing video from file '/tmp/01.flv' into '/tmp/02.yuv'
+Demuxing audio from file '/tmp/01.flv' into '/tmp/02.pcm'
+Demuxing succeeded.
+Play the output video file with the command:
+ffplay -f rawvideo -pix_fmt yuv420p -video_size 640x480 /tmp/02.yuv
+Warning: the sample format the decoder produced is planar (fltp). This example will output the first channel only.
+Play the output audio file with the command:
+ffplay -f f32le -ac 1 -ar 44100 /tmp/02.pcm

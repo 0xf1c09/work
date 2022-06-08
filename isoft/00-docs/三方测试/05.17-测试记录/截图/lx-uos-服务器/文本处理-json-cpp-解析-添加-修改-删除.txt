@@ -1,0 +1,93 @@
+user@lxs-uos-113:~/TEST/yuyh/jsoncpp$ ./jsoncpp_test_02_json_curd 
+/*
+* 文本处理库	:  jsoncpp库
+* 过程		： 读取jsoncpp.json文件内容，解析后进行增删改操作
+* 结果		： 输出json文件解析以及处理后的结果
+* 测试点	： JSON文件读取及解析、json内容增删改
+*
+*/
+---------------json文件解析结果--------------------
+age: 20
+family_id: 1314
+members: [{id: 1, name: "name"}, {id: 2, name: "name"}, {id: 3, name: "name"}, {id: 4, name: "name"}]
+money: 13.14
+single_parent: 0
+---------------新增hobby结果--------------------
+{
+   "age" : 20,
+   "family_id" : 1314,
+   "hobby" : [ "Basketball", "Football", "badminton" ],
+   "members" : [
+      {
+         "id" : 1,
+         "name" : "name"
+      },
+      {
+         "id" : 2,
+         "name" : "name"
+      },
+      {
+         "id" : 3,
+         "name" : "name"
+      },
+      {
+         "id" : 4,
+         "name" : "name"
+      }
+   ],
+   "money" : 13.140000000000001,
+   "single_parent" : false
+}
+
+---------------更新hobby结果--------------------
+{
+   "age" : 20,
+   "family_id" : 1314,
+   "hobby" : [ "Skating", "Dance" ],
+   "members" : [
+      {
+         "id" : 1,
+         "name" : "name"
+      },
+      {
+         "id" : 2,
+         "name" : "name"
+      },
+      {
+         "id" : 3,
+         "name" : "name"
+      },
+      {
+         "id" : 4,
+         "name" : "name"
+      }
+   ],
+   "money" : 13.140000000000001,
+   "single_parent" : false
+}
+
+---------------删除hobby结果--------------------
+{
+   "age" : 20,
+   "family_id" : 1314,
+   "members" : [
+      {
+         "id" : 1,
+         "name" : "name"
+      },
+      {
+         "id" : 2,
+         "name" : "name"
+      },
+      {
+         "id" : 3,
+         "name" : "name"
+      },
+      {
+         "id" : 4,
+         "name" : "name"
+      }
+   ],
+   "money" : 13.140000000000001,
+   "single_parent" : false
+}
