@@ -6,6 +6,7 @@
 ├── 02-build-image
 ├── 03-base-command-test
 ├── 04-14-lib-test-sample
+├── 05-HJJ-build-debs
 └── README
 ```
 
@@ -23,3 +24,6 @@
 
 # 04-14-lib-test-sample
 14类库测试样例
+
+# 05-HJJ-build-debs
+HJJ项目编包修改内容
