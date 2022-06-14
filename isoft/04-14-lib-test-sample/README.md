@@ -3,21 +3,6 @@
 .
 ├── qtc_rtf_lib_test
 └── rtf-lib-test
-    ├── build.sh
-    ├── clean.sh
-    ├── README
-    ├── ace
-    ├── cjson
-    ├── ffmpeg
-    ├── gdb
-    ├── gstreamer
-    ├── iniparser
-    ├── inotify
-    ├── jdb
-    ├── jsoncpp
-    ├── libxml2
-    ├── pcre
-    └── valgrind
 ```
 
 # rtf_lib_test

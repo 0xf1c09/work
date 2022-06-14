@@ -16,7 +16,7 @@ do
         cd $test_item
     
         printf "\033[31m %-30s  %-20s %-30s\n\033[0m"  "===============building"  "$test_item"  	"=========="
-        ./build.sh 
+        bash build.sh 
 
 	   OP_MODE=$?
        cd $WORKDIR

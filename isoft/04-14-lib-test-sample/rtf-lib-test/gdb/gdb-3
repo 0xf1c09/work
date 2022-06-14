@@ -1,0 +1,15 @@
+#!/bin/bash
+gdb libcfg/gdb/buggy <<GDB_INPUT
+b main
+b 20
+b foo
+info break
+run
+c
+s
+c
+info line
+c
+quit
+GDBINPUT
+

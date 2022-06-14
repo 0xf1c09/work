@@ -1,0 +1,18 @@
+#!/bin/bash
+gdb libcfg/gdb/buggy <<GDB_INPUT
+b main
+run
+s
+s
+s
+s
+s
+s
+p balance
+p &balance
+x /1dw &balance
+s
+s
+quit
+GDBINPUT
+
